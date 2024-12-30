@@ -1,5 +1,5 @@
 <?php
-include 'Product.php';
+include_once 'Product.php';
 
 class ConcreteProduct2 implements Product {
   public function operation(): string {

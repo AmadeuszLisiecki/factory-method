@@ -1,5 +1,5 @@
 <?php
-include('../products/Product.php');
+include_once __DIR__ . '/../products/Product.php';
 
 abstract class Creator {
   abstract public function factoryMethod(): Product;
@@ -7,6 +7,6 @@ abstract class Creator {
   public function someOperation(): string {
     $product = $this->factoryMethod();
 
-    return "Creator: The same creator's code has just worked with $product->operation()";
+    return 'Creator: The same creator\'s code has just worked with ' . $product->operation();
   }
 }
